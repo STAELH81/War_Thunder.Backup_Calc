@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War Thunder Backup Calculator</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>War Thunder Backup Calculator</h1>
+        <p>Enter the number of backups you need, select your tier, and we will calculate the best way to obtain them.</p>
+        <div>
+            <label for="backup-input">Number of backups:</label>
+            <input type="number" id="backup-input" placeholder="Enter number of backups" />
+        </div>
+        <div>
+            <label for="tier">Select your tier:</label>
+            <div>
+                <label><input type="checkbox" id="tier-2" value="2" onchange="toggleTiers(2)"> Tier 2</label>
+                <label><input type="checkbox" id="tier-3" value="3" onchange="toggleTiers(3)"> Tier 3</label>
+                <label><input type="checkbox" id="tier-4" value="4" onchange="toggleTiers(4)"> Tier 4</label>
+            </div>
+        </div>
+        <button id="calculate-button">🛠 Calculate Best Deal</button>
+        <div class="result" id="result">Enter details and click calculate to see the result.</div>
+    </div>
+    <script src="../JS/script.js"></script>
+</body>
+</html>
